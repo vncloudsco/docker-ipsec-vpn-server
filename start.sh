@@ -1,5 +1,4 @@
 #!/bin/sh
-vpn_function () {
 sudo modprobe af_key
 
 mkdir -p etc/ipsec.d
@@ -26,4 +25,3 @@ docker run \
     -d --privileged \
     --restart=always \
     mobilejazz/docker-ipsec-vpn-server
-}
